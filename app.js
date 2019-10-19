@@ -24,3 +24,39 @@
 }, 1000);
 
 
+
+// Video Modal Variables
+const getVideo = document.querySelectorAll('.video-get');
+var getModalBoxVid = document.getElementById('video-modal-container');
+var getModalVid = document.getElementById('modal-vid');
+
+// Event Listener when Image is Clicked
+getVideo.forEach(function (getVideo) {
+    getVideo.addEventListener('click', function(event) {
+
+        getModalBoxVid.style.display = 'block';
+        getModalVid.src = event.target.dataset.src;
+    });
+});
+
+// MODAL TOGGLE 
+const getModalToggle = document.querySelectorAll('.modal-container__toggle--icon');
+
+// Removes Video Modal Box is Clicked
+getModalToggle.forEach(function (getModalToggle) {
+    getModalToggle.addEventListener('click', function() {
+        getModalBoxVid.style.display = "none";
+        getModalVid.src = "";
+    });
+});
+
+// Removes Video Modal Box whenever a random spot is clicked
+window.onclick = function(event) {
+    if (event.target == getModalBoxVid) {
+        getModalBoxVid.style.display = "none";
+        getModalVid.src = "";
+    };
+};
+
+
+
