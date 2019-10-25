@@ -1,6 +1,6 @@
   const countdown = setInterval(function() {
   const now = new Date().getTime();
-  const then = new Date("Feb 21, 2020").getTime();
+  const then = new Date("May 29, 2020").getTime();
 
   const distance = then - now;
 
@@ -58,5 +58,9 @@ window.onclick = function(event) {
     };
 };
 
+
+
+//Gallery
+var modal = document.getElementById("myModal");
 
 
