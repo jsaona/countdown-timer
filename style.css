@@ -13,11 +13,16 @@ html {
 
 body {
   width: 100%;
+  
 }
 
 .logo {
   width: 100%;
   height: auto;
+}
+
+#container {
+  margin: 0 auto;
 }
 
 header {
@@ -27,6 +32,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .text-color {
@@ -46,7 +53,7 @@ header {
   display: flex;
   text-transform: uppercase;
   margin-top: 40px;
-  transform: translate(5%, 50%);
+  transform: translate(10%, 50%);
   position: absolute;
   color: #f7f7f7;
   font-size: 3.5rem;
@@ -82,6 +89,14 @@ header {
   text-align: center;
   border: none;
   font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #db6415;
+  transition: all .2s;
+  border-radius: 20px;
+  
 }
 
 main {
@@ -89,6 +104,8 @@ main {
 }
 
 .section-story {
+  display: flex;
+  justify-content: flex-end;
   padding: 10rem 5rem;
   background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/the-last-of-us2.jpg);
   background-position: top;
@@ -96,6 +113,7 @@ main {
   background-attachment: fixed;
   background-size: cover;
 }
+
 
 .heading-secondary {
   color: #f7f7f7;
@@ -108,11 +126,6 @@ main {
   margin-bottom: 30px;
 }
 
-.grid-right {
-  grid-area: right;
-  display: inline-block;
-  transform: translate(150%, 0%);  
-}
 
 p {
   color: #f7f7f7;
@@ -123,20 +136,15 @@ p {
   text-align: justify;
 }
 
-
-
 .section-trailers {
   padding: 5rem;
   background-color: rgb(14, 14, 14);
 }
 
-
-
 .trailer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0 6rem;
-  margin: 6rem auto 0;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 8rem auto 0;
 }
 
 .trailer-box {
@@ -252,7 +260,6 @@ p {
   font-size: 3rem;
 }
 
-
 /* Modal Box Zoom Animation */
 @keyframes zoom {
   0% {
@@ -273,12 +280,9 @@ p {
 
 .wrapper-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 25px;
   grid-template-areas: 
-  "gallery-p gallery-p gallery-p gallery-p"
-  "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
   "img1 img2 img3"
   "img4 img5 img6"
   "img7 img8 img9"
@@ -286,6 +290,7 @@ p {
   "img13 img14 img15" 
   "img16 img17 img18" 
   "img19 img20 img21";
+  width: 105%;
 }
 
 .wrapper-gallery .gallery-img {
@@ -301,19 +306,22 @@ p {
   border-radius: 3px;
   overflow: hidden;
   position: relative;
-  border: 2px solid transparent;
   backface-visibility: hidden;
   transition: all .3s;
+
 }
 
 .gallery-img {
-  display: block;
+  /* display: block; */
   transform: scale(1.2);
   transition: all .3s;
   opacity: 0.7;
   overflow: hidden;
   backface-visibility: hidden;
-  width: 100%;
+  /* margin: 0 auto;
+    width: 80%;
+    display: block; */
+
 }
 
 .gallery-img:hover {
@@ -469,7 +477,7 @@ p {
   opacity: 0.8;
 }
 
-/* Next Image */
+/* Prev Image */
 .img-btn-prev {
   display: block;
   padding: 6px 10px;
@@ -489,7 +497,50 @@ p {
   
 }
 
+.section-footer  {
+  background-color: black;
+  color: white;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
+.company-logo {
+  /* display: flex; */
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  
+}
+
+p.footer {
+  max-width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    height: 50vh;
+  }
+
+  .container {
+    top: 20%;
+    left: 15%;
+  }
+
+  .trailer-box__screenshot {
+    width: 100%;
+  }
+
+  .section-story {
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/ellie2.jpg);
+    padding: 5rem 5rem;
+    justify-content: center;
+  }
+}
 
 
 
