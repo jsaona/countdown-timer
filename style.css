@@ -13,7 +13,6 @@ html {
 
 body {
   width: 100%;
-  
 }
 
 .logo {
@@ -26,7 +25,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(./images/elliewitharrow.jpg);
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(./images/elliewitharrow.jpeg);
   position: relative;
   background-position: top;
   background-repeat: no-repeat;
@@ -62,6 +61,7 @@ header {
 }
 
 .smalltext {
+  color: #f7f7f7;
   margin: 0px 40px;
   text-align: center;
   font-size: 1.5rem;
@@ -93,8 +93,8 @@ header {
 }
 
 .btn-primary:hover {
-  background-color: #db6415;
-  transition: all .2s;
+  background-color: #ffae00;
+  transition: all .2s ease-out;
   border-radius: 20px;
   
 }

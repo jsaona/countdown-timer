@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="Description" content="When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry out justice and find closure. As she hunts those responsible one by one, she is confronted with the devastating physical and emotional repercussions of her actions.">
   <title>Countdown Timer</title>
   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -20,7 +21,7 @@
 
   <header>
     <div class="container">
-      <img src="images/The-Last-of-Us-Part-II-Logo.png" class="logo">
+      <img src="images/The-Last-of-Us-Part-II-Logo.png" class="logo" alt="logo">
       <h2 class="heading-secondary--sub">Available <span class="text-color"> 05.29.2020</span></h2>
         <div id="display-timer">
           <div>
@@ -41,7 +42,7 @@
           </div>
         </div>
         <div class="buttons">
-          <a href="https://www.gamestop.com/video-games/playstation-4/games/products/the-last-of-us-part-ii/11097389.html?sourceID=jo_pTdthTuc-bjB1hD39_UuMF8IsLrEG0g&utm_campaign=10&utm_medium=affiliate&utm_kxconfid=tebx5rmj3&affID=77777&utm_source=rakutenls&utm_content=www.PriceSpider.com&cid=afl_10000087" target="_blank" class="btn-primary" role="button">Pre Order</a>
+          <a href="https://www.gamestop.com/video-games/playstation-4/games/products/the-last-of-us-part-ii/11097389.html?sourceID=jo_pTdthTuc-bjB1hD39_UuMF8IsLrEG0g&utm_campaign=10&utm_medium=affiliate&utm_kxconfid=tebx5rmj3&affID=77777&utm_source=rakutenls&utm_content=www.PriceSpider.com&cid=afl_10000087" target="_blank" rel="noopener" class="btn-primary" role="button">Pre Order</a>
           <a href="#trailers" class="btn-primary" role="button">Watch Trailers</a>
         </div>
     </div>
@@ -61,22 +62,34 @@
 
   <div class="trailer">
     <div class="trailer-box">
-      <img src="images/ScreenShot4.png" data-src="https://www.youtube.com/embed/W2Wnvvj33Wo" alt="Trailer Screenshot" class="trailer-box__screenshot video-get">
+      <img srcset="images/ScreenShot4-small.png 300w, images/ScreenShot4.png 1000w"
+        sizes="(max-width: 768px) 50vw, (max-width:480px) 5vw, 500px" 
+        alt="trailer Screenshot" class="trailer-box__screenshot video-get" data-src="https://www.youtube.com/embed/W2Wnvvj33Wo"
+        src="images/ScreenShot4.png">  
       <h3 class="trailer-box__heading">Reveal Trailer </h3>
     </div>
           
-        <div class="trailer-box">
-            <img src="images/ScreenShot3.png" data-src="https://www.youtube.com/embed/UzdNECcio54" alt="Trailer Screenshot" class="trailer-box__screenshot video-get">
-            <h3 class="trailer-box__heading">Teaser Trailer #2</h3>
-        </div>
-
       <div class="trailer-box">
-            <img src="images/ScreenShot2.png" data-src="https://www.youtube.com/embed/btmN-bWwv0A" alt="Trailer Screenshot" class="trailer-box__screenshot video-get">
-            <h3 class="trailer-box__heading">E3 2018 Gameplay Reveal Trailer</h3>
+          <img srcset="images/ScreenShot3-small.png 300w, images/ScreenShot3.png 1000w"
+          sizes="(max-width: 768px) 50vw, (max-width:480px) 5vw, 500px" 
+          alt="trailer Screenshot" class="trailer-box__screenshot video-get" data-src="https://www.youtube.com/embed/UzdNECcio54"
+          src="images/ScreenShot3.png">
+          <h3 class="trailer-box__heading">Teaser Trailer #2</h3>
       </div>
 
       <div class="trailer-box">
-          <img src="images/ScreenShot1.png" data-src="https://www.youtube.com/embed/II5UsqP2JAk" alt="Trailer Screenshot" class="trailer-box__screenshot video-get">
+          <img srcset="images/ScreenShot2-small.png 300w, images/ScreenShot2.png 1000w"
+          sizes="(max-width: 768px) 50vw, (max-width:480px) 5vw, 500px" 
+          alt="trailer Screenshot" class="trailer-box__screenshot video-get" data-src="https://www.youtube.com/embed/btmN-bWwv0A"
+          src="images/ScreenShot2.png">
+          <h3 class="trailer-box__heading">E3 2018 Gameplay Reveal Trailer</h3>
+      </div>
+
+      <div class="trailer-box">
+          <img srcset="images/ScreenShot1-small.png 300w, images/ScreenShot1.png 1000w"
+          sizes="(max-width: 768px) 50vw, (max-width:480px) 5vw, 500px" 
+          alt="trailer Screenshot" class="trailer-box__screenshot video-get" data-src="https://www.youtube.com/embed/II5UsqP2JAk"
+          src="images/ScreenShot1.png">
           <h3 class="trailer-box__heading">Release Date Reveal Trailer</h3>
     </div>
  </div>
@@ -172,7 +185,7 @@
   </section>
 
   <div class="section-footer">
-    <img class="company-logo" src="images/NDlogo.png" alt="logo">
+    <img class="company-logo" src="/images/NDlogo.png" alt="logo">
     <p class="footer">Design and Developed by Jonathan Saona</p>
   </div>
 
