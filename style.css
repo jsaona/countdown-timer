@@ -312,15 +312,12 @@ p {
 }
 
 .gallery-img {
-  /* display: block; */
   transform: scale(1.2);
   transition: all .3s;
   opacity: 0.7;
   overflow: hidden;
   backface-visibility: hidden;
-  /* margin: 0 auto;
-    width: 80%;
-    display: block; */
+
 
 }
 
